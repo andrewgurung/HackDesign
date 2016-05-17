@@ -150,3 +150,17 @@ Start by copying the HTML below to begin a minimal Bootstrap document
 ```html
 <p class="text-danger">Error: An error has been occurred while submitting your data.</p>
 ```
+- URL: http://getbootstrap.com/css/#type
+
+### Forms
+- Bootstrap helps in aligning and styling labels and inputs, validating forms, and showing error messages which can be tricky without some help
+- All textual input elements like `input`, `textarea` and `select` are set to 100% of parent element
+- Rendering labels and input fields
+  - `.form-inline`: Render multiple labels and input fields in same line
+  - `.form-horizontal`: Render each input in its own row
+  - `.form-control-static`: Render plain text next to a form label
+- Bootstrap brings validation styles for different states
+  - `.has-warning`
+  - `.has-error`
+  - `.has-success`
+- URL: http://getbootstrap.com/css/#forms
