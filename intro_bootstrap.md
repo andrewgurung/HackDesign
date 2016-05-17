@@ -49,7 +49,13 @@ bootstrap/
 ```
 
 ### Getting started
-Copy the HTML below to begin working with a minimal Bootstrap document
+- 3 meta tags *must* come first in the head
+- Include minified bootstrap CSS file
+- Include minified bootstrap JavaScript file
+- Optional: For IE8 support
+  - Include HTML5 shim and Respond.js
+
+Start by copying the HTML below to begin a minimal Bootstrap document
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -62,6 +68,13 @@ Copy the HTML below to begin working with a minimal Bootstrap document
 
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <h1>Hello, world!</h1>
