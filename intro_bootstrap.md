@@ -194,3 +194,11 @@ Start by copying the HTML below to begin a minimal Bootstrap document
   </ul>
 </div>
 ```
+
+### Navbars
+- Navbars are responsive meta components that serve as navigation headers
+- They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases
+- Under the hood, Navbars are unordered inline list of menu items
+- Additional HTML elements can be added to Navbars
+  - Brand image or text
+  - Search bar and more
