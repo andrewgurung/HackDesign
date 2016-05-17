@@ -51,7 +51,9 @@ bootstrap/
 ### Getting started
 - 3 meta tags *must* come first in the head
 - Include minified bootstrap CSS file
-- Include minified bootstrap JavaScript file
+- Optional: Bootstrap interactive feature
+  - Include minified bootstrap JavaScript file
+  - Include jQuery library which is referenced by Bootstrap plugins
 - Optional: For IE8 support
   - Include HTML5 shim and Respond.js
 
