@@ -103,3 +103,38 @@ Start by copying the HTML below to begin a minimal Bootstrap document
   ```html
   <button type="button" class="btn btn-lg btn-success">Success</button>
   ```
+
+### Grids
+- Bootstrap can easily scales your websites with a single code base, from phones to tablets to desktops
+- This responsiveness is achieved using a fluid grid system that can be applied to appropriately scale up to 12 columns
+- Grid system has 4 tiers of classes:
+  1. xs for phones (<768px)
+  2. sm for tablets (≥768px)
+  3. md for desktops (≥992px)
+  4. lg for larger desktops (≥1200px)
+- Wrapper contains rows
+  1. Fixed-width layout: `.container` class, 1170px width
+  2. Full-width layout: `.container-fluid`
+- Rows contains columns
+  - Max number of columns: 12
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      Parent fixed-width column
+      <div class="row">
+        <div class="col-md-6">Nested column</div>
+        <div class="col-md-6">Nested column</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">Fluid ..</div>
+    <div class="col-md-4">.. and full-width ..</div>
+    <div class="col-md-4">.. example</div>
+  </div>
+</div>
+```
