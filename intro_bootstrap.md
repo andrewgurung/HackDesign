@@ -99,6 +99,7 @@ Start by copying the HTML below to begin a minimal Bootstrap document
 - Components are available as well-factored CSS classes
 - Convenient to use through semantic class names like `.btn` and `.btn-success`
 - For example,  including the `btn-success` class will paint the button in green color
+
   ```html
   <button type="button" class="btn btn-lg btn-success">Success</button>
   ```
