@@ -19,3 +19,31 @@ URL: https://www.toptal.com/front-end/what-is-bootstrap-a-short-tutorial-on-the-
     - Can choose between `Less` and `Sass` preprocessor version
     - Provides flexibility to ambitious developers to customize and build their own version of Bootstrap
 - URL: http://getbootstrap.com/getting-started/#download
+
+### File Structure
+- Precompiled Version comes with
+  1. CSS files
+  2. JavaScript files
+  3. Font files: Glyphicons fonts folder should be on the same level as the CSS folder
+- HTML: HTML templates can be copied and modified from Bootstrap tutorial page
+```
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap.min.css.map
+│   ├── bootstrap-theme.css
+│   ├── bootstrap-theme.css.map
+│   ├── bootstrap-theme.min.css
+│   └── bootstrap-theme.min.css.map
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    ├── glyphicons-halflings-regular.woff
+    └── glyphicons-halflings-regular.woff2
+```
