@@ -98,6 +98,7 @@ Start by copying the HTML below to begin a minimal Bootstrap document
 ### How to use Bootstrap components
 - Components are available as well-factored CSS classes
 - Convenient to use through semantic class names like `.btn` and `.btn-success`
+
 - For example,  including the `btn-success` class will paint the button in green color
 
   ```html
@@ -137,4 +138,15 @@ Start by copying the HTML below to begin a minimal Bootstrap document
     <div class="col-md-4">.. example</div>
   </div>
 </div>
+```
+
+### Typography
+- Every browser has its own default "user agent" style sheet that is applied to the HTML, and no two browsers have the same defaults
+- Bootstrap comes with `Normalize.css` that makes browsers render all elements more consistently and in line with modern standards
+- Bootstrap also includes simple and easily customized typography for headings, body text, lists, and more
+- For example, Text Emphasis will add colors to emphasize statements
+  - `.text-danger` class will display error message in red color
+
+```html
+<p class="text-danger">Error: An error has been occurred while submitting your data.</p>
 ```
