@@ -172,3 +172,25 @@ Start by copying the HTML below to begin a minimal Bootstrap document
 - `.img-thumbnail`: Converts to a thumbnail image
 - Includes over 250 glyphs in font format from the Glyphicon Halflings set
 - Font icons are scalable and easy to customize using just CSS
+- URL: http://getbootstrap.com/components/#glyphicons
+
+
+### Buttons, Button groups, Button dropdowns
+- Bootstrap makes buttons maintain a consistent look in all browsers through `.btn` class
+- `.btn-group`:  Group a series of buttons together into a single line
+- Button dropdowns: Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.
+- For example, Country Selection dropdown
+```html
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Country <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Canada</a></li>
+    <li><a href="#">Mexico</a></li>
+    <li><a href="#">USA</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Nepal</a></li>
+  </ul>
+</div>
+```
