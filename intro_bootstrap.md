@@ -89,3 +89,16 @@ Start by copying the HTML below to begin a minimal Bootstrap document
   </body>
 </html>
 ```
+
+## Building HTML pages with Bootstrap
+- Bootstrap comes with include many common UI components
+- These include Navigation, Grids, Buttons,Tabs, Accordions, and many others
+- Many of these use JavaScript extensions and jQuery plugins
+
+### How to use Bootstrap components
+- Components are available as well-factored CSS classes
+- Convenient to use through semantic class names like `.btn` and `.btn-success`
+- For example,  including the `btn-success` class will paint the button in green color
+  ```html
+  <button type="button" class="btn btn-lg btn-success">Success</button>
+  ```
