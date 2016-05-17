@@ -164,3 +164,11 @@ Start by copying the HTML below to begin a minimal Bootstrap document
   - `.has-error`
   - `.has-success`
 - URL: http://getbootstrap.com/css/#forms
+
+
+### Images and Icons
+- Images can be made responsive by simply adding `.img-responsive` class
+- `.img-rounded`: Applies a rounded corner
+- `.img-thumbnail`: Converts to a thumbnail image
+- Includes over 250 glyphs in font format from the Glyphicon Halflings set
+- Font icons are scalable and easy to customize using just CSS
