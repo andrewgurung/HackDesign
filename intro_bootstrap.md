@@ -224,4 +224,65 @@ Start by copying the HTML below to begin a minimal Bootstrap document
 
 ### Generating A Custom Build
 - Customize Bootstrap's components, Less variables, and jQuery plugins to get your very own version.
-URL: http://getbootstrap.com/customize/
+- URL: http://getbootstrap.com/customize/
+
+### Overriding with LESS
+- Download the Source code version
+- URL: http://getbootstrap.com/getting-started/#download
+- In the LESS directory: (Some things to note about these files)
+  1. bootstrap.less
+    - This is the central file
+    - It imports all of the others and is the one you'll ultimately compile
+  2. variables.less and mixins.less
+    - Variables contains the same variables as used on the generator websites
+  3. utilities.less
+    - This is always the last file to be imported, in order for the classes that it contains to override the rest of the styles where necessary
+
+For example:
+- The following `.less` file looks pretty similar to css
+- Things to notice:
+  - `@baseFontSize`: `variable` defined in `variables.less`
+  - `.border-radius`: `mixin` defined in `mixins.less`
+
+```less
+.btn-large {
+   padding: 9px 14px;
+   font-size: @baseFontSize + 2px;
+   line-height: normal;
+   .border-radius(5px);
+}
+```
+
+#### Installing LESS
+1. Install less using Node Package Manager (NPM)
+
+```
+npm install less
+```
+
+2. Compile bootstrap.less
+
+```
+lessc bootstrap.less > bootstrap.css
+```
+
+For the minified version, use this instead:
+```
+lessc --compress bootstrap.less > bootstrap.min.css
+```
+
+#### Modularizing your changes
+1. Download Bootstrap source code, rename it to `bootstrap` and leave it untouched
+2. Create separate folder named `custom`
+3. Copy these files from `bootstrap` to `custom` folder and perform necessary modifications
+  - custom-variables.less: Modify the variables in this copy instead of bootstrap original file
+  - custom-other.less: Any other customizations that aren't possible with the variables
+  - custom-bootstrap.less: The new central file that you will compile to CSS
+4. Along with the original LESS files, imports the two custom files above using the following commands
+
+```less
+@import "../bootstrap/less/bootstrap.less";
+@import "custom-variables.less";
+@import "custom-other.less";
+@import "../bootstrap/less/utilities.less";
+```
