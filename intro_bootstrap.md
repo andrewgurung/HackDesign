@@ -202,3 +202,22 @@ Start by copying the HTML below to begin a minimal Bootstrap document
 - Additional HTML elements can be added to Navbars
   - Brand image or text
   - Search bar and more
+
+## Customizing Bootstrap
+
+### Overriding With CSS
+- The most straightforward approach is to override Bootstrap’s styles using CSS
+
+```html
+<!-- Replace bootstrap.min.css with custom css -->
+<link rel="stylesheet" href="css/custom.css">
+```
+
+```css
+@import url("bootstrap.min.css");
+.btn {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+```
