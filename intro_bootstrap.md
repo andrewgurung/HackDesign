@@ -221,3 +221,7 @@ Start by copying the HTML below to begin a minimal Bootstrap document
   border-radius: 20px;
 }
 ```
+
+### Generating A Custom Build
+- Customize Bootstrap's components, Less variables, and jQuery plugins to get your very own version.
+URL: http://getbootstrap.com/customize/
