@@ -35,8 +35,9 @@ Typography is the art and process of arranging type for a variety of media purpo
   - Has extensions or strokes on the end of letters
   - Default category for most programs
   - Easy to read for longer pieces
-  - Eg: Times New Roman style
+  - Eg: Times New Roman
   - ![Times New Roman style](times_new_roman.png "Times New Roman style")
+
 ------------
 - San-Serif
   - Does not have extensions or strokes on the end of letters
@@ -44,6 +45,7 @@ Typography is the art and process of arranging type for a variety of media purpo
   - Use: Children books
   - Eg: Helvetica
   - ![Helvetica](helvetica.png "Helvetica")
+  
 ------------
 - Script, symbols and decorative type
   - Creates a specific image or message
